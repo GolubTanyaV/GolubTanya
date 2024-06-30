@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .menu-links {
+        color: green;
+        font-size: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    .separator {
+        color: red;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .menu a {
+        font-weight: bold;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
+
+    .blocklike a {
+        display: inline-block;
+        color: blue;
+        width: 250px;
+        font-size: 20px;
+        border-right: solid red 3px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .s-inner {
+        float: left;
+        width: 250px;
+        height: 40px;
+        border-right: solid red 3px;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    b::before {
+        content: '|';
+        color: red;
+        font-size: 30px;
+        font-weight: bold;
+        white-space: pre;
+    }
+</style>
+</head>
+
+<body>
+    <!--  Расположены в строку как строчные элементы подряд, разделитель сделан через span, прямое указание классов ссылок -->
+    <div class="menu">
+        <a href='http://google.com' class="menu-links">первая ссылка </a><span class="separator"> | </span>
+        <a href='http://google.com' class="menu-links">вторая ссылка </a><span class="separator"> | </span>
+        <a href='http://google.com' class="menu-links">третья ссылка </a><span class="separator"> | </span>
+        <a href='http://google.com' class="menu-links">четвёртая ссылка</a> <span class="separator"> | </span>
+        <a href='http://google.com' class="menu-links">пятая ссылка </a>
+    </div>
+    <!--  Расположен в строку как строчные элементы, разделители сделаны с помощью before, иерархические селекторы-->
+    <div class="menu">
+        <a href='http://google.com'>первая ссылка </a>
+        <a href='http://google.com'><b> вторая ссылка </b></a>
+        <a href='http://google.com'><b> третья ссылка </b></a>
+        <a href='http://google.com'><b> четвёртая ссылка </b></a>
+        <a href='http://google.com'><b> пятая ссылка </b></a>
+    </div>
+    <!--  Отображение строчных как блочных элементов, разделители сделаны как границы блока-->
+    <div class="blocklike">
+        <a href='http://google.com'>первая ссылка</a>
+        <a href='http://google.com'>вторая ссылка</a>
+        <a href='http://google.com'>третья ссылка</a>
+        <a href='http://google.com'>четвертая ссылка</a>
+        <a href='http://google.com'>пятая ссылка</a>
+    </div>
+
+    <!--  Отображение блочных элементов с clearfix, разделители сделаны как границы блока-->
+    <div class="clearfix">
+        <div class="s-inner"><a href='http://google.com'>первая ссылка</a></div>
+        <div class="s-inner"><a href='http://google.com'>вторая ссылка</a></div>
+        <div class="s-inner"><a href='http://google.com'>третья ссылка</a></div>
+        <div class="s-inner"><a href='http://google.com'>четвертая ссылка</a></div>
+        <div class="s-inner"><a href='http://google.com'>пятая ссылка</a></div>
+    </div>
+</body>
+
+</html>

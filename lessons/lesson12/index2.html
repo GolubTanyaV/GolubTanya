@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body div ul li span a {
+            color: green;
+        }
+        body ul li div ul li span a {
+            color: brown;
+        }
+        body div ul li a {
+            color: red;
+        }
+
+        body>ul li a {
+            color: orange;
+        }
+
+        div>ul li em a {
+            color: blue;
+        }
+
+        body>p em a {
+            color: gray;
+        }
+        body ul li div ul li em a {
+            color: chocolate;
+        }
+        body>ul li div ul li a {
+            color: indigo;
+        }
+        body>div p em a {
+            color: yellow;
+        }
+        body div>span em a {
+            color: black;
+        }
+        body>ul li div p a {
+            color: white;
+        }
+        body>ul li p em a {
+            color: aqua;
+        }
+        
+        body>ul li span a {
+            color:pink;
+        }
+        body>ul>li em a {
+            color: violet;
+        }
+        a {font-size: 35px;}
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>
+                <a href='http://google.com'>red-1</a>
+            </li>
+            <li>
+                <span>
+                    <a href='http://google.com'>green-2</a>
+                </span>
+            </li>
+            <li>
+                <em>
+                    <a href='http://google.com'>blue-3</a>
+                </em>
+            </li>
+        </ul>
+        <p>
+            <em>
+                <a href='http://google.com'>yellow-4</a>
+            </em>
+        </p>
+        <span>
+            <em>
+                <a href='http://google.com'>black-5</a>
+            </em>
+        </span>
+    </div>
+    <ul>
+        <li>
+            <a href='http://yandex.ru'>orange-6</a>
+            <span>
+                <a href='http://yandex.ru'>rose-7</a>
+            </span>
+            <em>
+                <a href='http://yandex.ru'>violet-8</a>
+            </em>
+        </li>
+        <li>
+            <p>
+                <em>
+                    <a href='http://yandex.ru'>aqua-9</a>
+                </em>
+            </p>
+        </li>
+        <li>
+            <div>
+                <ul>
+                    <li>
+                        <a href='http://yandex.ru'>indigo-10`</a>
+                    </li>
+                    <li>
+                        <em>
+                            <a href='http://yandex.ru'>chocolate-11</a>
+                        </em>
+                    </li>
+                    <li>
+                        <span>
+                            <a href='http://yandex.ru'>brown-12</a>
+                        </span>
+                    </li>
+                    <p>
+                        <a href='http://yandex.ru'>white-13</a>
+                    </p>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <p>
+        <em>
+            <a href='http://yandex.ru'>gray-14</a>
+        </em>
+    </p>
+
+
+
+
+</body>
+
+</html>
