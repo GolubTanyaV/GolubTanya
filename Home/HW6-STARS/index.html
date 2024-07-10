@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        
-    </style>
 </head>
+
 <body>
-    <style></style>
-    <div class="rating-stars"></div>
-    
+    <style>
+        .rating-stars {
+            display: inline-block;
+
+            span:hover:before {
+                content: url('star1.png');
+                position: absolute;
+            }
+
+            span:hover~span:before {
+                content: url('star1.png');
+                position: absolute;
+            }
+        }
+    </style>
+    <!--не могу перевернуть порядок-->
+    <div class="rating-stars">
+        <span><img src="star0.png"></span>
+        <span><img src="star0.png"></span>
+        <span><img src="star0.png"></span>
+        <span><img src="star0.png"></span>
+        <span><img src="star0.png"></span>
+    </div>
+
 </body>
+
 </html>
