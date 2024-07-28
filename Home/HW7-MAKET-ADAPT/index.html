@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        .header,
+        .footer {
+            background-color: cadetblue;
+            height: 70px;
+            margin-top: -20px;
+            color: blue;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 20px
+        }
+
+        .content-wrap {
+            background-color: orange;
+        }
+
+        .menu {
+            width: 200px;
+            background-color: orange;
+            float: left;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .fotochka {
+            width: 200px;
+            float: left;
+            margin: 20px;
+        }
+
+        .kontent {
+            background: url('ball2.jpeg') right repeat-y, linear-gradient(#fff, #fff);
+            margin-left: 220px;
+            padding: 20px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .clearfix:after {
+            content: ".";
+            display: block;
+            clear: both;
+        }
+
+        .zagolovok {
+            margin: 10px 10px 10px 50px;
+            font-weight: bold;
+            line-height: 150%;
+            text-align: center;
+        }
+
+        @media all and (max-width:654px) {
+
+            .header,
+            .footer {
+                height: 100px;
+                padding-top: 20px;
+                margin-top: -10px;
+            }
+
+            .menu {
+                width: 150px;
+            }
+        }
+
+        @media all and (max-width:510px) {
+            .menu {
+                width: 150px;
+                background-color: #fff;
+            }
+
+            .content-wrap {
+                background-color: #fff;
+
+            }
+
+            .kontent {
+                background-image: none;
+                background-color: #fff;
+            }
+
+            .fotochka {
+                width: 150px;
+            }
+        }
+
+
+        @media all and (max-width:363px) {
+            .menu {}
+
+            .kontent {
+                background-color: #fff;
+                margin-left: 20px;
+            }
+
+            .fotochka {
+                width: 200px;
+            }
+
+            .header,
+            .footer {
+                height: 150px;
+                padding-top: 20px;
+                margin-top: -10px;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h2>
+    </div>
+    <div class="content-wrap">
+        <div class="menu">
+            <h3>Виды спорта:</h3>
+            <ul style="padding-left: 10%;">
+                <li><a href=" index1.html" title="конькобежный спорт">конькобежный спорт</a></li>
+                <li><a href=" index2.html" title="биатлон">биатлон</a></li>
+                <li><a href=" index2.html" title="футбол">футбол</a></li>
+                <li><a href=" index2.html" title="стрельба из лука">стрельба из
+                        лука</a></li>
+                <li><a href=" index2.html" title="прыжки в длину">прыжки в длину</a></li>
+                <li><a href=" index2.html" title="прыжки в высоту">прыжки в
+                        высоту</a></li>
+                <li><a href=" index2.html" title="фигурное катание">фигурное
+                        катание</a></li>
+            </ul>
+        </div>
+
+        <div class=" kontent clearfix"><img class="fotochka" src="winner.png">
+            <h3 class="zagolovok">ФУТБОЛ</h3>
+            Футбол-
+            командный вид спорта,
+            в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме
+            рук) большее количество раз, чем команда соперника. <br> <br>Есть 17 официальных правил игры, каждое
+            из
+            которых содержит список оговорок и руководящих
+            принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые
+            изменеия для таких групп как юниоры, взрослые, женщины и люди с ограниченными физическими
+            возможностями. Законы очень часто формулировались в общих чертах, которые позволяют упростить их
+            применения в зависимости от характера игры.
+        </div>
+        <div class="footer">
+            <h2>ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</h2>
+        </div>
+    </div>
+</body>
+
+</html>

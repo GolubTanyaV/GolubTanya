@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        label {
+            user-select: none;
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+            background-color: lightblue;
+            border-radius: 12px;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        label::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: grey;text-decoration: aqua; 
+            top: 2px;
+            left: 2px;
+            transition: 0.5s;
+        }
+
+        input:checked + label{
+            background-color: blue;
+            content: "YES";
+        }
+
+        input:checked + label::before {
+            content: "";
+            left: 26px;
+        }
+    </style>
+
+<body>
+    <input hidden type="checkbox" id="aaa">
+    <label for="aaa">ON</label>
+
+</body>
+</html>
