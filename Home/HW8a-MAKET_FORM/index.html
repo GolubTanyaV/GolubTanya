@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nazvanie1 {
+            width: 100%;
+        }
+
+        #nazvanie2 {
+            width: 78%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        form {
+            padding: 10px 15px 10px 10px;
+        }
+
+        @media all and (max-width:360px) {
+            width: 320px;
+            padding: 5px 5px 5px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://fe.it-academy.by/TestForm.php" method="post" style="width: 320px; height: 310px;">
+        <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div>
+        <div style="padding-top: 10px;">Название статьи:</div>
+        <input type="text" name="article_title" maxlength="100" autofocus id="nazvanie1" size="5" ;>
+        <div style="padding-top: 10px;">Рубрика:</div>
+        <select name="heading">
+            <option value="4">программирование</option>
+            <option value="5">графика и дизайн</option>
+            <option value="6">компьютерная техника</option>
+        </select><br>
+        <divstyle="margin-top: 10px;">Публикация:</div><br>
+            <input type="radio" name="radio[]" value="1"> на сайте<br>
+            <input type="radio" name="radio[]" value="2"> в журнале<br>
+            <input type="radio" name="radio[]" value="3"> на сайте и в журнале<br>
+            <div style="padding: 2px o 3px 3px; float: left;">Разрешить комментарий:</div><input type="checkbox"
+                name="chek" value="yes" ;"><br>
+            <div>Текст статьи:</div>
+            <textarea name="article_content" style="height: 30px;"></textarea><br>
+
+            <input type="submit" value="Опубликовать"><br>
+    </form>
+    <br>
+    <br>
+    <form action="https://fe.it-academy.by/TestForm.php" method="post" style="width: 600px; height: 250px;">
+        <div style="font-size: 15px;">Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div>
+        <div style="padding-top: 10px; width: 20%; float: left;">Название статьи:</div> <input type="text"
+            name="article_title" maxlength="100" autofocus id="nazvanie2"
+            style="margin-left: 22%;margin-top: -20px; float: right;"></div>
+        <div style="clear: both;"></div>
+        <div style="padding-top: 5px;float: left;">Рубрика:
+            <select name="heading">
+                <option value="4">программирование</option>
+                <option value="5">графика и дизайн</option>
+                <option value="6">компьютерная техника</option>
+            </select>
+        </div>
+        <div style="clear: both;"></div>
+        <div style="float: left;">Публикация:</div>
+        <input type="radio" name="radio[]" value="1"> на сайте
+        <input type="radio" name="radio[]" value="2"> в журнале
+        <input type="radio" name="radio[]" value="3"> на сайте и в журнале
+        </div>
+        <div style="clear: both;"></div>
+        <div style="padding: 2px o 2px 1px; float: left;">Разрешить комментарий:</div><input type="checkbox" name="chek"
+            value="yes" style="margin-left: 1%;">
+        <div style="clear: both;"></div>
+        <div style="padding-top: 10px; float: left;">Текст статьи:</div>
+        <textarea name="article_content" style="height: 30px;"></textarea><br>
+        <input type="submit" value="Опубликовать"><br>
+    </form>
+</body>
+
+</html>
